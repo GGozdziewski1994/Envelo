@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project envelo</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/spinner.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/button.css">
+</head>
+<body>
+    <div class="container">
+        <div class='container__text'>
+            <h1 class="container__title">ENVELO</h1>
+            <h3 class="container__subtitle">Możesz mieć swoją przesyłkę w kilkanaście sekund.</h3>
+            <h3 class="container__subtitle">Rozpocznij klikając przycisk.</h3>
+            <form class="hidden form">
+                <div class="container__from">
+                    <div class="controls controls--phone">
+                        <label class="controls--label">Numer telefonu</label>
+                        <input class="controls--input" id="phone" type="number" name="number-phone" required />
+                        <p class="form-error-text"></p>
+                    </div>
+                    <div class="controls controls--code">
+                        <label class="controls--label">Kod</label>
+                        <input class="controls--input" id="code" type="number" name="code" required />
+                        <p class="form-error-text"></p>
+                    </div>
+                </div>
+                <div>
+                    <button disabled class="button submit--form">Odbierz paczkę</button>
+                </div>
+            </form>
+            <button class="button pick-up container__button">Odbierz paczkę</button>
+        </div>
+    </div>
+    <div class="container__modal hidden">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <h2 class="modal__title">Paczka odebrana!</h2>
+            <h3 class="modal__subtitle"></h3>
+            <div class="modal__buttons">
+                <button class="button back-to-start">To wszystko na dziś</button>
+                <button class="button pick-up">Odbierz kolejną paczkę</button>
+            </div>                
+        </div>
+    </div>
+    
+    <script type="module" src='./js/script.js'></script>
+</body>
+</html>

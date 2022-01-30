@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(182, 181, 181);
+}
+
+.container, .container__modal {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__text {
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(82, 82, 82, 0.4);
+}
+
+.container__title {
+    color: red;
+    margin-bottom: 2rem;
+}
+
+.container__from {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+.controls--label {
+    margin-bottom: 0.25rem;
+}
+
+.controls--input {
+    border: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.controls--input[type=number]::-webkit-inner-spin-button, 
+.controls--input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+.controls--input:focus {
+    outline: none;
+}
+
+.field-error {
+    border: 1px solid red;
+    background: rgb(252, 134, 134);
+}
+
+.field-error:focus {
+    background: rgb(252, 134, 134);
+}
+
+.form-error-text {
+    color: red;
+    width: 150px;
+}

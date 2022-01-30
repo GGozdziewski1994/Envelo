@@ -1,0 +1,17 @@
+.button {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background: red;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgb(185, 9, 9);
+}
+
+.submit--form:disabled {
+    background: rgba(255, 0, 0, 0.438);
+    cursor: not-allowed;
+}

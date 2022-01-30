@@ -1,0 +1,26 @@
+{
+  "name": "project-envelo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Grzegorz Goździewski",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.4.7"
+  },
+  "dependencies": {
+    "babel-jest": "^27.4.6"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
